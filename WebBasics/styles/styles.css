@@ -1,0 +1,60 @@
+p{
+    color: red;
+    width: 200px;
+    border: 1px solid black;
+
+}
+
+li, h1{
+    color: blue;
+    width: 225px;
+    border: 2px solid black;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 5px 3px 1px black;
+}
+p:hover{
+    color: rgb(0, 255, 132);
+    width: 300px;
+    border: 3px solid red;
+}
+
+html{
+    font-size: 20px;
+    font-family: "Kode Mono", bold;
+    background-color: rgba(221, 221, 187, 0.929);
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body{ 
+    /* forces the body to always be 600 pixels wide.*/
+    width:  600px;
+
+    /* When you set two values on a property like margin or padding, the first value affects 
+    the element's top and bottom side (setting it to 0 in this case); 
+    the second value affects the left and right side. 
+    (Here, auto is a special value that divides the available horizontal space evenly between left and right). 
+    You can also use one, two, three, or four values */
+    margin: 0 auto;
+
+    background-color: bisque;
+    
+    /* This sets four values for padding. The goal is to put some space around the content. 
+    In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. 
+    The values set top, right, bottom, left, in that order. */
+    padding: 0 20px 20px 20px;
+    
+    
+    border: 5px solid black;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width:100%;
+  }
