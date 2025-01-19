@@ -1,0 +1,62 @@
+body {
+    background-color: #0968A2;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    font-family: Comic Sans MS;
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0 1em 0;
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+label {
+    display: inline-block;
+}
+
+input,
+select[id="dropdown"],
+textarea {
+    background-color: rgb(5, 7, 115);
+    color: white;
+    font-family: Comic Sans MS;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgb(5, 7, 115);
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="number"] {
+    width: 40%
+}
+
+form {
+    padding-bottom: 2em;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}

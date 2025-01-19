@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <meta charset = "utf-8"/>
+    <link rel = "stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id = "description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id = "survey-form">
+      <fieldset >
+        <label id = "name-label">Name <input required type = "text" id = "name" placeholder = "Enter your name" class = "inline"/></label>
+      </fieldset>
+      <fieldset>
+        <label id ="email-label" >Email <input required type="email" id = "email" placeholder="Enter your email" class="inline"/></label>
+      </fieldset>
+      <fieldset>
+        <label id = "number-label">Age (optional) <input type = "number" placeholder="Enter your age" id = "number" class="inilne" min = "13" max = "120"/></label>
+      </fieldset>
+      <fieldset>
+        <label for = "dropdown"> Option
+          <select id = "dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Is this a good form?
+          <input type="radio" value = "1" checked name = "choice"/> Yes
+          <input type="radio" name = "choice" value="2"/> No
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>1-3
+          <input type="checkbox" value ="1"/> 1
+          <input type="checkbox" value="2"/> 2
+          <input type="checkbox" value="3"/> 3
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Additional Comments
+          <textarea class="inline"></textarea>
+        </label>
+      </fieldset>
+      <label><input id = "submit" type="submit" value="Submit"/></label>
+    </form>
+  </body>
+</html>
