@@ -1,0 +1,40 @@
+body{
+    background-color:  hsl(212, 45%, 89%);
+    font-size: 15px;
+    text-align: center;
+    font-family: "Specimen", sans-serif;
+}
+
+#qr-code{
+    width: 27vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    width:fit-content;
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+h1{
+    width: 25vw;
+}
+
+p{
+    color: hsl(216, 15%, 48%);
+    width: 17vw;
+    margin-top: -5px;
+}
+
+.attribution{
+    margin-top: 20px;
+}
