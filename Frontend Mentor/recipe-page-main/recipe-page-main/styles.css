@@ -1,0 +1,118 @@
+html{
+    background-color: rgba(251, 203, 115, 0.474);
+}
+
+body{
+    font-family: "Outfit", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(72, 72, 72, 0.997);
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 0 35px;
+}
+
+h1{
+    color: black;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.prep{
+    background-color: hsla(332, 24%, 75%, 0.252);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#text{
+    margin-left: 25px;
+}
+
+h2, li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.font{
+    font-family: "Young Serif", sans-serif;
+    font-weight: 100;
+}
+
+.prep li::marker, .prep h3{
+    color: hsl(332, 41%, 49%);
+}
+
+ol li::marker{
+    font-weight: 700;
+}
+
+li{
+    padding: 0 13px;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+section{
+    border-bottom: 1px solid lightgrey;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1em;
+}
+
+tr:not(:last-of-type){
+    border-bottom: 1px solid lightgrey ;
+}
+
+tr td[class="value"]{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+ol, section ul{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px){
+    body{
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        
+    }
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+        padding: 0px;
+    }
+    .recipe-container{
+        padding: 0 1.75rem;
+    }
+}
