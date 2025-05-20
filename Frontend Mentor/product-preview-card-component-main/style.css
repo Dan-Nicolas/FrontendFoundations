@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* mobile*/
+    border-radius: 25px;
+    background-color: rgb(243, 240, 240);
+}
+
+.text-container{
+    margin: auto 1.2em;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#name{
+    margin-top: 15px;
+    margin-bottom: -5px;
+    font-size: 29px;
+}
+
+.desc-div{
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+#desc{
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h1, #discount{
+    font-family: 'Fraunces', serif;
+    color: black;
+}
+
+.price{
+    display: flex;
+    gap: 15px;
+}
+
+.discount-div{
+    color: hsl(158, 36%, 37%);
+    display: flex;
+}
+
+#discount{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.msrp-div{
+    display: flex;
+    align-self:center;
+}
+
+.cart-button{
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    gap: -10px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-p{
+    font-weight: 700;
+}
+
+img[alt="cart"]{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+
+@media (min-width:1025px){
+    .content{
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+        flex-direction: row;
+
+    }
+    .product{
+        width: 50%;
+        height: 100vh;
+        border-radius: 20px 0 0 20px;
+        aspect-ratio: 1;
+        content: url("./images/image-product-desktop.jpg");
+    }
+
+    .text-container{
+        margin: 1.7em 2em;
+    }
+
+    .tag{
+        margin-bottom: 30px;
+    }
+
+    #name{
+        font-size: 43px;
+        margin-bottom: 35px;
+    }
+
+    #desc{
+        font-size: 19px;
+        line-height: 1.7em;
+        margin-bottom: 30px;
+    }
+
+    .price{
+        font-size: 18px;
+        margin-bottom: 20px;
+        gap: 30px;
+    }
+
+    #discount{
+        font-size: 40px;
+    }
+    
+    .cart-button:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+    }
+
+}
