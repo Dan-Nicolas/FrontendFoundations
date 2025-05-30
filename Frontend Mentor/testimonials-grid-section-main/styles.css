@@ -1,0 +1,188 @@
+:root{
+    --light-purple: hsl(264, 82%, 80%);
+    --purple: hsl(263, 55%, 52%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --dark-grey: hsl(217, 19%, 35%);
+    --white: hsl(214, 17%, 92%);
+}
+
+html{
+    margin: 0;
+    background-color: var(--white);
+    font-family: "Barlow Semi Condensed", sans-serif;;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px rgb(148, 148, 148);
+    margin-bottom: 35px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid saddlebrown;
+    width: max-content;
+}
+
+img{
+    border-radius: 50%;
+    padding: 0px;
+}
+
+.header-txt{
+    line-height: .5em;
+    margin-left: 30px;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comment{
+    font-size:  1.5em;
+    font-weight: 600;
+}
+
+.daniel{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.daniel img:not bg-quotes{
+    background-color: var(--light-purple);
+}
+
+.jonathan {
+    background-color: var(--dark-grey);
+    color: var(--white);
+}
+
+.jeanette, .kira{
+    color: var(--dark-grey) ;
+}
+
+.jeanette p:not(:nth-of-type(2)), .kira p:not(:nth-of-type(2)){
+    font-weight: 600;
+}
+
+.patrick{
+    background-color:  var(--dark-blue);
+    color: var(--white);
+}
+
+.patrick .header-img img{
+    border: 3px solid var(--purple);
+}
+
+@media (min-width: 1025px){
+
+    .container{
+        display: flex;
+        max-height: 100vh;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .four-person-container{
+        margin-right: 30px;
+        width: 60%;
+    }
+
+    .content{
+        height: 40vh;
+        margin-bottom: 0;
+        border-radius: 10px;
+        padding:  29px 34px;
+    }
+
+    .comment{
+        font-size: 1.4em;
+        margin-top: 1.6em;
+        margin-bottom: .45em;
+    }
+
+    .container-daniel-jonathan{
+        display: flex;
+    }
+
+    .daniel{
+        width: 65%;
+        margin-right: 20px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:flex-start;
+    }
+
+    .content:first-of-type .header{
+        margin-bottom: 1em;
+    }
+
+    .content:nth-of-type(n+2) .header, .jeanette .header{
+        margin-bottom: -1.3em;
+    }
+
+    .bg-quotes{
+        content: url("./images/bg-pattern-quotation.svg");
+        width: 20%;
+        z-index: 0;
+        align-items: start;
+        margin-top: -13vh;
+        margin-left: 23.9em;
+    }
+
+    .daniel .txt{
+        z-index: 2;
+        margin-top: -7.5vh;
+    }
+
+    .jonathan{
+        width: 27%;    
+    }
+
+    .jeanette-patrick-container{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .jeanette{
+        width: 25%;
+        margin-right: 20px;
+    }
+
+    .jeanette .txt{
+        margin-top: -2em;
+    }
+
+    .patrick{
+        width: 70%;
+    }
+
+    .patrick img{
+        background-color: var(--purple);
+    }
+
+    .kira{
+        width: 15vw;
+        height: 90vh;
+    }
+}
