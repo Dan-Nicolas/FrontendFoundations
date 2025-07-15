@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="pic" id="drawers" src="./images/drawers.jpg" alt="" />
+      <div class="container-content">
+        <div class="content">
+          <h2>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="tooltip-div">
+          <div class="tooltip hidden">
+            <div id="links">
+              <p>S H A R E</p>
+              <div class="links-div">
+                <img src="./images/icon-facebook.svg" alt="" />
+                <img src="./images/icon-twitter.svg" alt="" />
+                <img src="./images/icon-pinterest.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="michelle-container" class="share-content">
+          <div  id="person" class="person end">
+            <div id="michelle">
+              <div id="pfp-div">
+                <img id="pfp" src="./images/avatar-michelle.jpg" alt="" />
+              </div>
+              <div id="about">
+                <h4>Michelle Appleton</h4>
+                <p>28 June 2020</p>
+              </div>
+            </div>
+            <div id="share">
+              <div id="click-div">
+                <img
+                  class="share-btn"
+                  id="click"
+                  src="./images/icon-share.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div id="person-active" class="curve hidden">
+            <div id="links-active" class="end">
+              <div class="share-links">
+                <div class="p-div">
+                  <p>S H A R E</p>
+                </div>
+                <div class="links-div">
+                  <img src="./images/icon-facebook.svg" alt="" />
+                  <img src="./images/icon-twitter.svg" alt="" />
+                  <img src="./images/icon-pinterest.svg" alt="" />
+                </div>
+              </div>
+              <div class="share-arrow">
+                <div id="share-active">
+                  <div id="click-div-active">
+                    <img
+                      class="share-btn"
+                      id="click-active"
+                      src="./images/icon-share.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

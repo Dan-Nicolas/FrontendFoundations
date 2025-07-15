@@ -1,0 +1,222 @@
+body {
+    background-color: rgb(221, 227, 246);
+    font-family: "Manrope", "sans-serif";
+    font-size: 13px;
+}
+
+.container {
+    background-color: rgb(246, 241, 241);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#drawers {
+    max-width: 100%;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#person-active{
+    height: 10.5vh;
+    display:flex ;
+    align-items: center;
+}
+
+#michelle {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+#about {
+    margin-left: 15px;
+    width: 9em;
+    max-height: 45%;
+}
+
+#about h4 {
+    margin-bottom: -10px;
+}
+
+#pfp {
+    border-radius: 50%;
+    width: 60px;
+}
+
+#share {
+    display: flex;
+    width: 40%;
+    justify-content: right;
+}
+
+.share-btn {
+    width: 50%;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+#click {
+    background-color: hsl(212, 23%, 69%);
+}
+
+.links-div {
+    display: flex;
+    align-items: center;
+}
+
+.links-div img {
+    padding: 0 10.5px;
+    scale: 1.25;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.curve {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#person-active {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#links-active {
+    color: aliceblue;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.share-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#share-active {
+    display: flex;
+    width: 10vw;
+    justify-content: right;
+}
+
+#click-active {
+    background-color: hsl(212, 23%, 69%);
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .content {
+        margin-top: -50px;
+    }
+
+    #drawers {
+        height: 100%;
+    }
+
+    .tooltip-div {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 70px;
+    }
+
+    .tooltip {
+        display: flex;
+        width: fit-content;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 25px;
+    }
+
+
+    #links {
+        display: flex;
+        padding: 10px;
+    }
+
+    #michelle {
+        display: flex;
+        align-items: center;
+    }
+
+    .person {
+        display: flex;
+        flex-direction: row;
+        width: 35vw;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .pfp-div {
+        width: 30%;
+    }
+
+
+    #pfp {
+        border-radius: 50%;
+        width: 70px;
+    }
+
+    #share {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #click-div {
+        justify-content: right;
+        display: flex;
+    }
+
+    #click {
+        background-color: hsl(212, 23%, 69%);
+        width: 13%;
+        padding: 8px;
+        border-radius: 50%;
+    }
+}
