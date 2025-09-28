@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h2 id="title">S P L I T T E R</h2>
+    <div class="container">
+      <div class="content">
+        <div class="bill">
+          <form>
+            <div class="form-header">
+              <label for="bill">Bill</label><br />
+              <p class="error-msg hidden" id="bill-error">
+                Can't be zero or less
+              </p>
+            </div>
+            <input type="text" id="bill" name="bill" placeholder="0.00" />
+          </form>
+        </div>
+        <div class="tip">
+          <form action="">
+            <div class="form-header"></div>
+            <label for="tip">Select Tip %</label>
+            <br />
+            <div class="buttons">
+              <input
+                type="button"
+                id="tip"
+                name="tip"
+                value="5%"
+                class="tip-btn"
+              />
+              <input
+                type="button"
+                id="tip"
+                name="tip"
+                value="10%"
+                class="tip-btn"
+              />
+              <input
+                type="button"
+                id="tip"
+                name="tip"
+                value="15%"
+                class="tip-btn"
+              />
+              <input
+                type="button"
+                id="tip"
+                name="tip"
+                value="25%"
+                class="tip-btn"
+              />
+              <input
+                type="button"
+                id="tip"
+                name="tip"
+                value="50%"
+                class="tip-btn"
+              />
+              <input
+                type="text"
+                min="0"
+                max="100"
+                name="tip"
+                id="custom-tip"
+                placeholder="CUSTOM"
+                class="tip-btn"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="people">
+          <form action="">
+            <div class="form-header">
+              <label for="people">Number of People</label>
+              <p class="error-msg hidden" id="ppl-error">Can't be zero</p>
+            </div>
+            <input type="text" name="people" id="people" placeholder="0" />
+          </form>
+        </div>
+      </div>
+
+      <div id="total">
+        <div id="tip-box">
+          <div id="tip-textbox">
+            <h4>Tip Amount</h4>
+            <p class="per-person">/ person</p>
+          </div>
+          <div id="total-tip">
+            <h1 id="tip-text">$0.00</h1>
+          </div>
+        </div>
+        <div id="total-box">
+          <div id="total-textbox">
+            <h4>Total</h4>
+            <p class="per-person">/ person</p>
+          </div>
+          <div id="total-total">
+            <h1 id="total-text">$0.00</h1>
+          </div>
+        </div>
+        <div>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
