@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="container" >
+    <div id="star">
+      <img src="/Frontend Mentor/interactive-rating-component-main/images/icon-star.svg" alt="star-icon" />
+    </div>
+    <section id="question">
+      <h1>How did we do?</h1>
+    </section>
+    <section id="text">
+      <p>
+        Please let us know how we did with your support request. All feedback
+        is appreciated to help us improve our offering!
+      </p>
+    </section>
+    <section id="rating">
+      <button class="ratings">1</button>
+      <button class="ratings">2</button>
+      <button class="ratings">3</button>
+      <button class="ratings">4</button>
+      <button class="ratings">5</button>
+    </section>
+    <section>
+      <button id="btn">S U B M I T</button>
+    </section>
+  </section>
+
+  <section id="thanks" class="hidden">
+    <div id="thanks-img">
+      <img src="images/illustration-thank-you.svg" alt="thanks">
+    </div>
+    <section id="score">
+      <p>You selected
+        <span id="score-rating"></span>
+        out of 5
+      </p>
+    </section>
+    <section>
+      <h1>Thank you!</h1>
+    </section>
+    <section id="thanks-text">
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+      </p>
+    </section>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
