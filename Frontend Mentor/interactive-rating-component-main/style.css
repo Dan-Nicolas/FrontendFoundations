@@ -55,8 +55,9 @@ body {
     display: none;
 }
 
-.clicked{
+.clicked {
     background-color: aliceblue;
+    color: hsl(213, 19%, 18%);
 }
 
 #thanks {
@@ -76,6 +77,39 @@ body {
     margin-top: 1em;
 }
 
-#thanks-text{
+#thanks-text {
     color: hsl(217, 12%, 63%);
+}
+
+@media (min-width: 1060px) {
+    html{
+        height: 100%;
+
+    }
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
+        
+    }
+
+    #container,
+    #thanks{
+        width: 20vw;
+        border-radius: 25px;
+    }
+
+    .ratings:hover{
+        background-color: hsl(25, 97%, 53%) ;
+        color: hsl(213, 19%, 18%);
+    }
+
+    #btn:hover{
+        background-color: aliceblue;
+        color: hsl(213, 19%, 18%) ;
+    }
 }
