@@ -39,6 +39,10 @@ body {
     display: none;
 }
 
+.questions{
+    border-bottom: 1px solid rgb(246, 241, 241);
+}
+
 .question-plus:not(header){
     display: flex;
     justify-content: space-between;
