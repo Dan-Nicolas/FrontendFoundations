@@ -3,25 +3,16 @@ const ArrOfPlus = Array.from(plus);
 const minus = document.querySelectorAll('.minus');
 const ArrOfMinus = Array.from(minus);
 const answers = document.querySelectorAll('.answer');
+const questions = document.querySelectorAll('.question');
+const ArrQuestions = Array.from(questions);
 let index = 0;
 
 
-function swap(idx) {
-    plus[idx].classList.toggle('hidden');
-    minus[idx].classList.toggle('hidden');
-    answers[idx].classList.toggle('hidden');
-}
-
-for (const p of plus) {
-    p.addEventListener('click', (e) => {
-        index = ArrOfPlus.indexOf(e.target);
-        swap(index);
-    });
-}
-
-for (const m of minus) {
-    m.addEventListener('click', (e) => {
-        index = ArrOfMinus.indexOf(e.target);
-        swap(index);
-    });
+for (const q of questions) {
+    q.addEventListener('click', (e) => {
+        index = ArrQuestions.indexOf(e.target);
+        plus[index].classList.toggle('hidden');
+        minus[index].classList.toggle('hidden');
+        answers[index].classList.toggle('hidden');
+    })
 }
