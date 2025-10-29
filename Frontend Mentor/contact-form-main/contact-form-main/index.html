@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Contact Us</h1>
+    <fieldset>
+      <section class="format" id="firstName">
+        <label for="fname">First Name <strong class="star">*</strong></label>
+        <input type="text" name="fname" required>
+      </section>
+
+      <section class="format" id="lastName">
+        <label for="lname">Last Name <strong class="star">*</strong></label>
+        <input type="text" name="lname" id="" required>
+      </section>
+
+      <section class="format" id="emailAdd">
+        <label for="eaddress">Email Address <strong class="star">*</strong></label>
+        <input type="email" name="eaddress" id="" required>
+        <span class="hidden">Please enter a valid email address</span>
+      </section>
+
+      <section class="format" id="q">
+        <label for="query">Query Type <strong class="star">*</strong></label>
+        <section id="gen">
+          <input type="radio" name="query" id="">
+          <label for="query">General Enquiry</label>
+        </section>
+        <section id="sup">
+          <input type="radio" name="query" id="" required>
+          <label for="">Support Request</label>
+        </section>
+        <span class="hidden">Please select a query type</span>
+      </section>
+
+      <section class="format" id="msgBox">
+        <label for="msg">Message <strong class="star">*</strong></label>
+        <input type="text" name="msg" id="msg-box" required>
+      </section>
+
+      <section id="con">
+        <input type="checkbox" name="consent" id="" required>
+        <label for="consent">I consent to being contacted by the team. <strong class="star">*</strong></label>
+        <p class="hidden">To submit this form, please consent to being contacted</p>
+      </section>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </div>
+
+  <div id="sent" class="hidden">
+    <h1>Message Sent!</h1>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+</body>
+
+</html>

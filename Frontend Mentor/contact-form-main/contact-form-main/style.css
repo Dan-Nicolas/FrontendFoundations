@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('assets/fonts/Karla-VariableFont_wght.ttf');
+}
+
+html{
+    background-color: hsl(148, 38%, 91%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', monospace;
+}
+
+#container{
+    background-color: white;
+    min-height: 90vh;
+    max-width: 85vw;
+    padding: 0 .5em;
+    border-radius: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    min-height: 50vh;
+    justify-content:space-between;
+}
+
+.star{
+    color: hsl(169, 82%, 27%);
+}
+
+.format{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+input{
+    border: 1px solid gray;
+}
+
+input[type="text"], input[type="email"]{
+    border-radius: 5px;
+    height: 3em;
+}
+
+input[name='msg']{
+    height: 13em;
+}
+
+#gen, #sup{
+    border: 1px solid gray;
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    margin: .5em 0;
+}
+
+label{
+    margin-bottom: .5em;
+    font-size: 16px;
+}
+
+.hidden{
+    display: none;
+}
+
+button[type='submit']{
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+label[for='consent']{
+    max-width: 80%;
+}
+
+#con{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+}
+
